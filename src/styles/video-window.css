@@ -1,0 +1,4 @@
+.video-window {
+  transform: scale(0.95);
+  transform-origin: center center;
+} 

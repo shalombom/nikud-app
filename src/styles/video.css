@@ -1,0 +1,26 @@
+.video-window {
+  position: fixed;
+  bottom: calc(250px + 5mm);
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 3s ease-out;
+}
+
+.video-window.faded {
+  opacity: 0.5;
+}
+
+.video-window video {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background: transparent !important;
+  transition: opacity 3s ease-out;
+}
+
+.video-window.faded video {
+  opacity: 0.5;
+} 

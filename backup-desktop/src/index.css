@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.nikud-container {
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 280px;  /* הגדלת המרווח משמעותית */
+  padding: 40px 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  transform: scale(1.2);
+  transform-origin: top center;
+}
+
+.nikud-row-group {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.nikud-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.practice-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.practice-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background: transparent !important;
+}
+
+.practice-tile {
+  background: transparent !important;
+}
+
+.nikud-tile {
+  position: relative;
+  margin: 5px;
+  display: inline-block;
+  background: transparent !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.nikud-tile-inner {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent !important;
+}
+
+.nikud-sign-container {
+  width: 60%;
+  height: 50%;
+  border: 1.5px solid rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background: transparent !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.monkey-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1.5px solid rgba(0, 0, 0, 0.85);
+  background: transparent;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.monkey-image {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  display: block;
+}
+
+/* סגנון מיוחד לתאי התרגול */
+.practice-row .nikud-tile-inner {
+  border: 2px solid black;
+}
